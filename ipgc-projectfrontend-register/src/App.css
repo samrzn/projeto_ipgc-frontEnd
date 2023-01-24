@@ -1,0 +1,13 @@
+.color-nav {
+    background-color: #3b3b3b;
+}
+
+.home-title {
+    color: #FF540F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc((42 / 1366) * 100vw);
+    font-weight: 800;
+    line-height: 1em;
+    text-align: center;
+    margin-top: 15vh;
+}

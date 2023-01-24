@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from 'react-bootstrap/Button';
+import HomeNavbar from './components/HomeNavbar';
+import HomeTitle from './components/HomeTitle';
 
 function App() {
   return (
     <div className="App">
-      <Button variant="primary">Bootstrap button test</Button>
+      <HomeNavbar />
+      <HomeTitle />
     </div>
   );
 }
