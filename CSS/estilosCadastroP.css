@@ -1,11 +1,37 @@
-* {
-    font-family: 'Montserrat', sans-serif;
+.approvalDateTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1200) * 100vw);
+    font-weight: 550;
+    line-height: 1.35em;
+    margin: 0;
+    color: #3b3b3b;
+    background-color: #fff;
 }
 
-.title_pageRegister {
+.projectLenghtTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1200) * 100vw);
+    font-weight: 550;
+    line-height: 1.35em;
+    margin: 0;
+    color: #3b3b3b;
+    background-color: #fff;
+}
+
+.durationTimeTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1200) * 100vw);
+    font-weight: 550;
+    line-height: 1.35em;
+    margin: 0;
+    color: #3b3b3b;
+    background-color: #fff;
+}
+
+.titlePageProject {
     color: #FF540F;
     font-family: 'Montserrat', sans-serif;
-    font-size: calc((42 / 1366) * 100vw);
+    font-size: calc((36 / 1366) * 100vw);
     font-weight: 800;
     line-height: 1em;
     text-align: center;
@@ -13,27 +39,142 @@
 }
 
 .approvalDateInfo {
-    border-style:solid;
-    border-color: gray;
-    border-width: 1px;
-    border-radius: 8px;
-    padding: 7.7px 10px;
-    margin-top: 5px;
+    display: block;
+    margin: 0;
+    padding: 0.7em;
+    border: none;
+    border-radius: 1vw;
+    height: 3vw;
+    width: 100%;
+    color: #FF540F;
+    background-color: #FAFAFA;
+    box-shadow: 0 calc((4 / 1366) * 100vw) calc((4 / 1366) * 100vw) rgba(0, 0, 0, 0.15);
+    border-radius: calc((5 / 1366) * 100vw);
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1200) * 100vw);
+    font-weight: 550;
 }
 
 .durationTimeInfo {
-    border-style:solid;
-    border-color: gray;
-    border-width: 1px;
-    border-radius: 8px;
-    padding: 7.7px 10px;
-    margin-top: 5px;
-}
-
-.projectNameInfo {
+    display: block;
+    margin: 0;
+    padding: 0.7em;
+    border: none;
+    border-radius: 1vw;
+    height: 3vw;
+    width: 100%;
     color: #FF540F;
+    background-color: #FAFAFA;
+    box-shadow: 0 calc((4 / 1366) * 100vw) calc((4 / 1366) * 100vw) rgba(0, 0, 0, 0.15);
+    border-radius: calc((5 / 1366) * 100vw);
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1200) * 100vw);
+    font-weight: 550;
 }
 
 .projectProgressInfo {
+    padding: 0.75em;
+    color: #FF540F;
+    font-family: 'Lato', sans-serif;
+    font-size: calc((13 / 1100) * 100vw);
+    font-weight: 100;
     vertical-align: middle;
+}
+
+.projectProgressData {
+    padding: 0.75em;
+    color: #3b3b3b;
+    font-family: 'Lato', sans-serif;
+    font-size: calc((12.5 / 1100) * 100vw);
+    font-weight: 100;
+    vertical-align: middle;
+    border: 1px dotted #b3b3b3
+}
+
+#formGroupExampleInput {
+    display: block;
+    margin: 0;
+    padding: 0.7em;
+    border: none;
+    border-radius: 1vw;
+    height: 3vw;
+    width: 100%;
+    color: #FF540F;
+    background-color: #FAFAFA;
+    box-shadow: 0 calc((4 / 1366) * 100vw) calc((4 / 1366) * 100vw) rgba(0, 0, 0, 0.15);
+    border-radius: calc((5 / 1366) * 100vw);
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1200) * 100vw);
+    font-weight: 550;
+}
+
+#tableProjectDetails {
+    margin-top: 5vh;
+    margin: 5 10%;
+    width: 100%;
+    border: none;
+    border-radius: 1vw;
+    box-shadow: 0 calc((4 / 1366) * 100vw) calc((4 / 1366) * 100vw) rgba(0, 0, 0, 0.15);
+    border-radius: calc((5 / 1366) * 100vw);
+}
+
+#generalProjectInfo {
+    margin-top: 5vh;
+}
+
+.projectTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc((27 / 1400) * 100vw);
+    font-weight: 800;
+    color: #3b3b3b;
+    ;
+    line-height: 1em;
+    text-align: center;
+    margin: 3.5vh;
+}
+
+#pageBasicFooter {
+    margin-top: 10vh;
+    background-color: #1F3666;
+}
+
+#footerBackground {
+    background-color: #1F3666;
+    width: 100%;
+}
+
+.logo {
+    height: calc((150 / 1920) * 100vw);
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+@media (orientation: landscape) and (max-width: 768px) {
+    .projectProgressInfo {
+        padding: 0.75em;
+        color: #FF540F;
+        font-family: 'Lato', sans-serif;
+        font-size: calc((15 / 1100) * 100vw);
+        font-weight: 300;
+        vertical-align: middle;
+    }
+
+    .projectProgressData {
+        padding: 0.75em;
+        color: #3b3b3b;
+        font-family: 'Lato', sans-serif;
+        font-size: calc((17 / 1100) * 1000vw);
+        font-weight: 300;
+        vertical-align: middle;
+        border: 1px dotted #b3b3b3
+    }
+
+    .titlePageProject {
+        color: #FF540F;
+        font-family: 'Montserrat', sans-serif;
+        font-size: calc((12 / 1100) * 100vw);
+        font-weight: 800;
+        line-height: 1em;
+        text-align: center;
+    }
 }
