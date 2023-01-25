@@ -1,3 +1,7 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .title_pageRegister {
     color: #FF540F;
     font-family: 'Montserrat', sans-serif;
@@ -6,4 +10,30 @@
     line-height: 1em;
     text-align: center;
     margin-top: 15vh;
+}
+
+.approvalDateInfo {
+    border-style:solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 7.7px 10px;
+    margin-top: 5px;
+}
+
+.durationTimeInfo {
+    border-style:solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 8px;
+    padding: 7.7px 10px;
+    margin-top: 5px;
+}
+
+.projectNameInfo {
+    color: #FF540F;
+}
+
+.projectProgressInfo {
+    vertical-align: middle;
 }
