@@ -1,5 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
+import Container from "react-bootstrap/esm/Container";
 
 class HomeTable extends React.Component {
 
@@ -7,11 +8,19 @@ class HomeTable extends React.Component {
         super(props);
         this.state = { tests: [] }
     }
+    componentDidMount() {
+        this.refreshList();
+    }
+    refreshList() {
+        this.setState({
+            tests: [{ "TaskZero": 'Test Task 0', "TaskOne": 'Test Task 1', "TaskTwo": 'Test Task 2', "TaskThree": 'Test Task 3', "TaskFour": 'Test Task 4', "TaskFive": 'Test Task 5', "TaskSix": 'Test Task 6', "TaskSeven": 'Test Task 7' }]
+        })
+    }
     render() {
         const { tests } = this.state;
         return (
-            <Table className="table table-striped-bordered text-center align-self-center" id="tableProjectDetails">
-                <div class="table-responsive">
+            <Container className="tableProjectDetails">
+                <Table className="table table-responsive table-striped text-center align-self-center">
                     <thead>
                         <tr class="projectProgressInfo">
                             <th>Atividade</th>
@@ -25,8 +34,8 @@ class HomeTable extends React.Component {
                         </tr>
                     </thead>
                     <tbody class="table-group-divider text-break">
-                        {tests.map(dep=>
-                            <tr key={test.TableProject} class="projectProgressData">
+                        {tests.map(test =>
+                            <tr key={test.Task} class="projectProgressData">
                                 <th scope="row">{test.TaskZero}</th>
                                 <td>{test.TaskOne}</td>
                                 <td>{test.TaskTwo}</td>
@@ -36,10 +45,10 @@ class HomeTable extends React.Component {
                                 <td>{test.TaskSix}</td>
                                 <td>{test.TaskSeven}</td>
                             </tr>
-                            )}
+                        )}
                     </tbody>
-                </div>
-            </Table>
+                </Table>
+            </Container>
         );
     }
 }
