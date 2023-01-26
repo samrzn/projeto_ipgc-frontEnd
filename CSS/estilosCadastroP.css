@@ -120,6 +120,7 @@
 
 #generalProjectInfo {
     margin-top: 5vh;
+    align-items: center;
 }
 
 .projectTitle {
@@ -127,7 +128,6 @@
     font-size: calc((27 / 1400) * 100vw);
     font-weight: 800;
     color: #3b3b3b;
-    ;
     line-height: 1em;
     text-align: center;
     margin: 3.5vh;

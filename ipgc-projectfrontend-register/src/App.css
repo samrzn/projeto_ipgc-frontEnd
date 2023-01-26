@@ -2,12 +2,97 @@
     background-color: #3b3b3b;
 }
 
-.home-title {
+.titlePageProject {
     color: #FF540F;
     font-family: 'Montserrat', sans-serif;
-    font-size: calc((42 / 1366) * 100vw);
+    font-size: calc((36 / 1366) * 100vw);
     font-weight: 800;
     line-height: 1em;
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 20vh;
+}
+
+.generalProjectInfo {
+    margin-top: 5vh;
+}
+
+.projectTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc((27 / 1400) * 100vw);
+    font-weight: 800;
+    color: #3b3b3b;
+    line-height: 1em;
+    text-align: center;
+    margin: 3.5vh;
+}
+
+.approvalDateInfo {
+    display: block;
+    margin: 0;
+    padding: 0.7em;
+    border: none;
+    border-radius: 1vw;
+    height: 3vw;
+    width: 100%;
+    color: #FF540F;
+    background-color: #FAFAFA;
+    box-shadow: 0 calc((4 / 1366) * 100vw) calc((4 / 1366) * 100vw) rgba(0, 0, 0, 0.15);
+    border-radius: calc((5 / 1366) * 100vw);
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1200) * 100vw);
+    font-weight: 550;
+}
+
+.durationTimeTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1200) * 100vw);
+    font-weight: 550;
+    line-height: 1.35em;
+    margin: 0;
+    color: #3b3b3b;
+    background-color: #fff;
+}
+
+.approvalDateTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1200) * 100vw);
+    font-weight: 550;
+    line-height: 1.35em;
+    margin: 0;
+    color: #3b3b3b;
+    background-color: #fff;
+}
+
+.approvalDateInfo {
+    display: block;
+    margin: 0;
+    padding: 0.7em;
+    border: none;
+    border-radius: 1vw;
+    height: 3vw;
+    width: 100%;
+    color: #FF540F;
+    background-color: #FAFAFA;
+    box-shadow: 0 calc((4 / 1366) * 100vw) calc((4 / 1366) * 100vw) rgba(0, 0, 0, 0.15);
+    border-radius: calc((5 / 1366) * 100vw);
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1200) * 100vw);
+    font-weight: 550;
+}
+
+.durationTimeInfo {
+    display: block;
+    margin: 0;
+    padding: 0.7em;
+    border: none;
+    border-radius: 1vw;
+    height: 3vw;
+    width: 100%;
+    color: #FF540F;
+    background-color: #FAFAFA;
+    box-shadow: 0 calc((4 / 1366) * 100vw) calc((4 / 1366) * 100vw) rgba(0, 0, 0, 0.15);
+    border-radius: calc((5 / 1366) * 100vw);
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1200) * 100vw);
+    font-weight: 550;
 }
