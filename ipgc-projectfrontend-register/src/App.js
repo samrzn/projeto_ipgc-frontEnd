@@ -3,6 +3,7 @@ import HomeNavbar from './components/HomeNavbar';
 import HomeTitle from './components/HomeTitle';
 import HomeContentIntro from './components/HomeContent';
 import HomeTable from './components/HomeTable';
+import HomeFooter from './components/HomeFooter';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HomeTitle />
       <HomeContentIntro />
       <HomeTable />
+      <HomeFooter />
     </div>
   );
 }

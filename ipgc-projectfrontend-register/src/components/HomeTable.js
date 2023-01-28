@@ -20,7 +20,7 @@ class HomeTable extends React.Component {
         const { tests } = this.state;
         return (
             <Container className="tableProjectDetails">
-                <Table className="table table-responsive table-striped text-center align-self-center">
+                <Table className="table table-responsive table-striped table-bordered text-center align-self-center">
                     <thead>
                         <tr class="projectProgressInfo">
                             <th>Atividade</th>
