@@ -4,6 +4,7 @@ import { mdiMapMarker } from '@mdi/js';
 import { mdiEmail } from '@mdi/js';
 import { mdiPhone } from '@mdi/js';
 import { mdiRss } from '@mdi/js';
+import { mdiFacebook } from '@mdi/js';
 
 class HomeFooter extends React.Component {
     render() {
@@ -30,8 +31,10 @@ class HomeFooter extends React.Component {
                         </p>
                     </div>
                     <div class="flex-end">
-                        <img class="logo" src="https://ipgc.com.br/imagens/enviadas/7ab144fbe186385bf9aa4d1abfd18249.svg"
-                            alt="IPGC" />
+                        <div>
+                            <img class="logo" src="https://ipgc.com.br/imagens/enviadas/7ab144fbe186385bf9aa4d1abfd18249.svg"
+                                alt="IPGC" />
+                        </div>
                     </div>
                 </div>
             </div>
