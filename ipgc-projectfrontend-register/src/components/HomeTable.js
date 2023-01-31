@@ -99,4 +99,6 @@ const HomeTable = () => {
 //     }
 // }
 
+// trecho comentado representa a primeira construção da tabela dinâmica sem utilização de hooks e papaparse library para conexão com API externa.
+
 export default HomeTable;
