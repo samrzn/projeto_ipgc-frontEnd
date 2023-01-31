@@ -5,7 +5,7 @@ import Papa from 'papaparse';
 
 const HomeTable = () => {
     const [data, setData] = useState({});
-    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_rJYmyEZ44bkbyZemmIB8LFd7_6fyVkGBvV8feL8QWg48bXMdW-iUr6BTFkYi1zVZgh2Uw5KtkR2q/pub?output=csv", {
+    Papa.parse("https://docs.google.com/spreadsheets/d/1dFaszbs3fRgRTgfKKmUc0voHsdDCMfVQrkzlqp2YwVU/pub?output=csv", {
         download: true,
         header: true,
         complete: (results) => {
@@ -29,16 +29,16 @@ const HomeTable = () => {
                     </tr>
                 </thead>
                 <tbody class="table-group-divider text-break">
-                    {tasks.map((data) => (
-                        <tr key={data.Task} class="projectProgressData">
-                            <th scope="row">{data.TaskZero}</th>
-                            <td>{data.TaskOne}</td>
-                            <td>{data.TaskTwo}</td>
-                            <td>{data.TaskThree}</td>
-                            <td>{data.TaskFour}</td>
-                            <td>{data.TaskFive}</td>
-                            <td>{data.TaskSix}</td>
-                            <td>{data.TaskSeven}</td>
+                    {tasks.map((data, id) => (
+                        <tr key={id} class="projectProgressData">
+                            <th scope="row">{data.atividade}</th>
+                            <td>{data.inicio}</td>
+                            <td>{data.dias}</td>
+                            <td>{data.final}</td>
+                            <td>{data.inicioreal}</td>
+                            <td>{data.completar}</td>
+                            <td>{data.finalreal}</td>
+                            <td>{data.prog}</td>
                         </tr>
                     ))}
                 </tbody>
