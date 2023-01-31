@@ -129,8 +129,8 @@
 .footerBackground {
     background-color: #1F3666;
     margin-top: 10vh;
-    padding-top: 3vh;
-    height: 30vh;
+    padding-top: calc((60 / 1920) * 100vw);
+    padding-bottom: calc((60 / 1920) * 100vw);
     text-align: start;
 }
 
@@ -141,18 +141,40 @@
 
 .logo {
     height: calc((150 / 1920) * 100vw);
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    padding-bottom: 1.5vh;
-    display: flex;
 }
 
 .pageFooterInfo {
     color: #fff;
     font-family: 'Lato', sans-serif;
-    font-size: calc((20 / 1300) * 100vw);
+    font-size: calc((23 / 1366) * 100vw);
     font-weight: 600;
     line-height: 1.35em;
+    margin-bottom: calc((38 / 1920) * 100vw);
+}
+
+.footerInfo {
+    font-family: 'Lato', sans-serif;
+    font-size: calc((14 / 1366) * 100vw);
+    font-weight: 400;
+    line-height: 1.35em;
+    padding: calc((170 / 1366) * 100vw) 0 0 0;
+    margin: 0;
+    color: #fff;
+    text-align: justify;
+}
+
+.footerIcon {
+    margin-right: 0.25em;
+    font-size: 1.5em;
+    color: #fff;
+    line-height: 0.5;
+}
+
+.bold,
+.bold:hover {
+    text-decoration: none;
+    font-weight: 900;
+    color: inherit;
 }
 
 @media (orientation: landscape) and (max-width: 768px) {

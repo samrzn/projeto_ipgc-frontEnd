@@ -9,8 +9,8 @@ function HomeNavbar() {
                     <Navbar.Brand href="#home">
                         <img
                             src="https://ipgc.com.br/imagens/enviadas/a3ac47e468b904443fb3cca2e602168a.svg"
-                            width="86"
-                            height="48"
+                            width="106"
+                            height="58"
                             alt="IPGC"
                         />
                     </Navbar.Brand>
