@@ -5,7 +5,7 @@ import Papa from 'papaparse';
 
 const HomeTable = () => {
     const [data, setData] = useState({});
-    Papa.parse("https://docs.google.com/spreadsheets/d/1dFaszbs3fRgRTgfKKmUc0voHsdDCMfVQrkzlqp2YwVU/pub?output=csv", {
+    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSR5nL58S8mOqslqswcm9_mDQ2EXplhiQkZ5G0V8dGrDOmxOLAkAefEaPtza_8TOobNdJpr4rK7K0IC/pub?output=csv", {
         download: true,
         header: true,
         complete: (results) => {

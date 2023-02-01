@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "glogin": "clasp login",
     "glogout": "clasp logout",
-    "gcreate": "clasp create --title 'Front-end IPGC Follow Up App' --rootDir ./apps_script",
+    "gcreate": "clasp create --title 'ipgcFollowUpApp' --rootDir ./apps_script",
     "gclone": "clasp clone 1Y5IxzQZBYNNeRsaddjaXHqr8Zv3mT9zZgoaMpZBxR7HOToUByaepwuIL --rootDir ./apps_script",
     "gpull": "clasp pull",
     "gpush": "clasp push",
