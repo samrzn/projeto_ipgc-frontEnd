@@ -1,18 +1,35 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 import Container from "react-bootstrap/esm/Container";
-import Papa from 'papaparse';
+import axios from "axios";
+// import Papa from 'papaparse';
+
+// const HomeTable = () => {
+//     const [data, setData] = useState({});
+//     Papa.parse("https://docs.google.com/spreadsheets/d/1Xemck1lhhBlLvc3CBJo_rJJRQMtg-w5veMDAjKSqMmM/pub?output=csv", {
+//         download: true,
+//         header: true,
+//         complete: (results) => {
+//             setData(results.data);
+//         },
+//     });
+//     const tasks = Array.from(data);
 
 const HomeTable = () => {
-    const [data, setData] = useState({});
-    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vSR5nL58S8mOqslqswcm9_mDQ2EXplhiQkZ5G0V8dGrDOmxOLAkAefEaPtza_8TOobNdJpr4rK7K0IC/pub?output=csv", {
-        download: true,
-        header: true,
-        complete: (results) => {
-            setData(results.data);
-        },
-    });
-    const tasks = Array.from(data);
+
+    const [posts, setPosts] = useState({ infos: [] })
+
+    useEffect(() => {
+        const fetchPostList = async () => {
+            const { data } = await axios("https://script.google.com/macros/s/AKfycbwsMlRdfhhSbqbl0Z7tuhXakOf9fpJdgIbp1LGJEKjS84vD11W4xaA4VDFKubqUDzMT/exec?action=getInfo")
+
+            setPosts({infos: data})
+            console.log(data)
+        }
+        fetchPostList()
+    }, [setPosts])
+
+
     return (
         <Container className="tableProjectDetails">
             <Table className="table table-responsive table-striped table-bordered text-center align-self-center">
@@ -29,22 +46,22 @@ const HomeTable = () => {
                     </tr>
                 </thead>
                 <tbody class="table-group-divider text-break">
-                    {tasks.map((data, id) => (
+                    {posts.infos && posts.infos.map((detail, id) => (
                         <tr key={id} class="projectProgressData">
-                            <th scope="row">{data.atividade}</th>
-                            <td>{data.inicio}</td>
-                            <td>{data.dias}</td>
-                            <td>{data.final}</td>
-                            <td>{data.inicioreal}</td>
-                            <td>{data.completar}</td>
-                            <td>{data.finalreal}</td>
-                            <td>{data.prog}</td>
+                            <th scope="row">{detail.atividade}</th>
+                            <td>{detail.inicio}</td>
+                            <td>{detail.dias}</td>
+                            <td>{detail.final}</td>
+                            <td>{detail.inicioreal}</td>
+                            <td>{detail.completar}</td>
+                            <td>{detail.finalreal}</td>
+                            <td>{detail.prog}</td>
                         </tr>
                     ))}
                 </tbody>
             </Table>
         </Container>
-    );
+    )
 }
 
 
