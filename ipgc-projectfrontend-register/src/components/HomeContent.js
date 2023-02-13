@@ -11,7 +11,7 @@ const HomeContentIntro = () => {
 
     useEffect(() => {
         const fetchPostList = async () => {
-            const { data } = await axios("https://script.google.com/macros/s/AKfycbwsMlRdfhhSbqbl0Z7tuhXakOf9fpJdgIbp1LGJEKjS84vD11W4xaA4VDFKubqUDzMT/exec?action=getInfo")
+            const { data } = await axios("https://script.google.com/macros/s/AKfycbxk8drqkkYjdxqkHnroDcW1-OH8A2hSmjYcDyKMpKJQ2v4hqoU6WXS4FjE22BJ7CMm9/exec?action=getInfo")
 
             setPosts({ infos: data })
             console.log(data)
@@ -24,8 +24,8 @@ const HomeContentIntro = () => {
     return (
         <Container>
             <div className="generalProjectInfo">
-                {posts.infos && posts.infos.map((detail, id) => (
-                    <div key={id} class="container">
+                {posts.infos && posts.infos.map((detail) => (
+                    <div key={detail} class="container">
                         <div class="row text-center">
                             <div class="col col-md">
                                 <h2 class="projectTitle">{detail.nome}</h2>

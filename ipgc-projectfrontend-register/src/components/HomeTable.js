@@ -21,7 +21,7 @@ const HomeTable = () => {
 
     useEffect(() => {
         const fetchPostList = async () => {
-            const { data } = await axios("https://script.google.com/macros/s/AKfycbwsMlRdfhhSbqbl0Z7tuhXakOf9fpJdgIbp1LGJEKjS84vD11W4xaA4VDFKubqUDzMT/exec?action=getInfo")
+            const { data } = await axios("https://script.google.com/macros/s/AKfycbxk8drqkkYjdxqkHnroDcW1-OH8A2hSmjYcDyKMpKJQ2v4hqoU6WXS4FjE22BJ7CMm9/exec?action=getInfo")
 
             setPosts({infos: data})
             console.log(data)
