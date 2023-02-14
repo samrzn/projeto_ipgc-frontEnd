@@ -24,31 +24,32 @@ const HomeContentIntro = () => {
     return (
         <Container>
             <div className="generalProjectInfo">
-                {posts.infos && posts.infos.map((detail) => (
-                    <div key={detail} class="container">
-                        <div class="row text-center">
-                            <div class="col col-md">
-                                <h2 class="projectTitle">{detail.nome}</h2>
+                <div className="container">
+                    <div class="row text-center">
+                        {posts.infos.map((detail) => (
+                            <div className="col col-md" key={detail}>
+                                {detail.nome && <h2 className="projectTitle">{detail.nome}</h2>}
                             </div>
+                        ))}
+                    </div>
+                    <div class="row d-flex justify-content-evenly">
+                        <div class="col col-md-3">
+                            <h2 class="approvalDateTitle">Data de Aprovação</h2>
                         </div>
-                        <div class="row d-flex justify-content-evenly">
-                            <div class="col col-md-3">
-                                <h2 class="approvalDateTitle">Data de Aprovação</h2>
-                            </div>
-                            <div class="col col-md-3">
-                                <h2 class="durationTimeTitle">Tempo de Duração</h2>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-evenly">
-                            <div class="col col-md-3">
-                                <h4 class="approvalDateInfo">{detail.aprovacao}</h4>
-                            </div>
-                            <div class="col col-md-3">
-                                <h4 class="durationTimeInfo">{detail.tempo}</h4>
-                            </div>
+                        <div class="col col-md-3">
+                            <h2 class="durationTimeTitle">Tempo de Duração</h2>
                         </div>
                     </div>
-                ))}
+                    {/* parte comentada deve ser transformada em novo component e CSS Grid para reposicionar componentes
+                    <div class="row d-flex justify-content-evenly">
+                        <div class="col col-md-3">
+                            {detail.aprovacao && <h4 class="approvalDateInfo">{detail.aprovacao}</h4>}
+                        </div>
+                        <div class="col col-md-3">
+                            {detail.tempo && <h4 class="durationTimeInfo">{detail.tempo}</h4>}
+                        </div>
+                    </div> */}
+                </div>
             </div>
         </Container >
     );
