@@ -1,9 +1,11 @@
 import './App.css';
-import HomeNavbar from './components/HomeNavbar';
-import HomeTitle from './components/HomeTitle';
-import HomeContentIntro from './components/HomeContent';
-import HomeTable from './components/HomeTable';
-import HomeFooter from './components/HomeFooter';
+import HomeNavbar from './components/homeNavbar';
+import HomeTitle from './components/homeTitle';
+import HomeContentIntro from './components/homeContentIntro';
+import HomeTable from './components/homeTable';
+import HomeFooter from './components/homeFooter';
+import HomeContentApproval from './components/homeContentApproval';
+import HomeContentDuration from './components/homeContentDuration';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <HomeNavbar />
       <HomeTitle />
       <HomeContentIntro />
+      <HomeContentApproval />
+      <HomeContentDuration />
       <HomeTable />
       <HomeFooter />
     </div>

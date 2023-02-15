@@ -24,7 +24,7 @@ const HomeTable = () => {
             const { data } = await axios("https://script.google.com/macros/s/AKfycbxk8drqkkYjdxqkHnroDcW1-OH8A2hSmjYcDyKMpKJQ2v4hqoU6WXS4FjE22BJ7CMm9/exec?action=getInfo")
 
             setPosts({infos: data})
-            console.log(data)
+            // console.log(data)
         }
         fetchPostList()
     }, [setPosts])
