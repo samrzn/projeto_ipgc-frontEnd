@@ -1,8 +1,8 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 
-class HomeTitle extends React.Component {
-    render() {
+const HomeTitle = () => {
+    
         return (
             <Container>
                 <div className='titlePageProject'>
@@ -12,7 +12,6 @@ class HomeTitle extends React.Component {
                 </div>
             </Container>
         );
-    }
 }
 
 export default HomeTitle;

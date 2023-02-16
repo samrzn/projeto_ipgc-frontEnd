@@ -4,8 +4,7 @@ import HomeTitle from './components/homeTitle';
 import HomeContentIntro from './components/homeContentIntro';
 import HomeTable from './components/homeTable';
 import HomeFooter from './components/homeFooter';
-import HomeContentApproval from './components/homeContentApproval';
-import HomeContentDuration from './components/homeContentDuration';
+import HomeContentData from './components/homeContentData';
 
 function App() {
   return (
@@ -13,8 +12,7 @@ function App() {
       <HomeNavbar />
       <HomeTitle />
       <HomeContentIntro />
-      <HomeContentApproval />
-      <HomeContentDuration />
+      <HomeContentData />
       <HomeTable />
       <HomeFooter />
     </div>

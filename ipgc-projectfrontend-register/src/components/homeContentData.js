@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import axios from "axios";
 
-const HomeContentApproval = () => {
+const HomeContentData = () => {
 
     const [infos, setInfos] = useState({ details: [] })
 
@@ -22,17 +22,20 @@ const HomeContentApproval = () => {
         <Container>
             <div className="generalProjectInfo">
                 <div class="container">
-                    <div class="row d-flex justify-content-evenly" >
-                        <div class="col col-md-3">
-                            {infos.details.map((value, id) => (
-                                <h4 className="durationTimeInfo" key={id}>{value.aprovacao}</h4>
-                            ))}
+                    {infos.details.map((value, id) => (
+                        <div class="row d-flex justify-content-evenly" key={id}>
+                            <div class="col col-md-3">
+                                {value.aprovacao && <h4 class="approvalDateInfo">{value.aprovacao}</h4>}
+                            </div>
+                            <div class="col col-md-3">
+                                {value.tempo && <h4 class="durationTimeInfo">{value.tempo}</h4>}
+                            </div>
                         </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </Container >
     );
 }
 
-export default HomeContentApproval;
+export default HomeContentData;
