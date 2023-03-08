@@ -5,6 +5,7 @@ import HomeContentIntro from './components/homeContentIntro';
 import HomeTable from './components/homeTable';
 import HomeFooter from './components/homeFooter';
 import HomeContentData from './components/homeContentData';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
