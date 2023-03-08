@@ -38,7 +38,7 @@
 
 
 <div style="display: inline_block"><br>  
-<img align="center" alt="Node" height="20" width="30" src="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_node_icon_157859.png" />
+<img align="center" alt="Node" height="30" width="30" src="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_node_icon_157859.png" />
 <img align="center" alt="React-Bootstrap" height="30" width="40" src="https://avatars.githubusercontent.com/u/6853419?s=200&v=4" />  
 <img align="center" alt="Axios" height="30" width="40" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/axios_logo_icon_168546.png" />
 <img align="center" alt="HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
